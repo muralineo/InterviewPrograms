@@ -8,11 +8,11 @@ public class Duplicates {
         HashSet<Integer> set = new HashSet<>();
         HashSet<Integer> duplicateSet = new HashSet<>();
 
-        for(int i=0;i<numbers.length;i++){
-            if(set.contains(numbers[i])){
-                duplicateSet.add(numbers[i]);
-            }else{
-                set.add(numbers[i]);
+        for (int number : numbers) {
+            if (set.contains(number)) {
+                duplicateSet.add(number);
+            } else {
+                set.add(number);
             }
         }
 
@@ -20,7 +20,7 @@ public class Duplicates {
     }
 
 
-    public static void duplicateCounts(int[] arr) {
+    public static void duplicateOccurrence(int[] arr) {
 
         HashMap<Integer, Integer> map =new HashMap<>();
 
@@ -45,7 +45,7 @@ public class Duplicates {
         List<Map.Entry<Integer, Integer> > list = new LinkedList<>(hm.entrySet());
 
         // Sort the list
-        Collections.sort(list, Map.Entry.comparingByValue());
+        list.sort(Map.Entry.comparingByValue());
 
         // put data from sorted list to hashmap
         HashMap<Integer, Integer> sortedDuplicate = new LinkedHashMap<>();
@@ -65,7 +65,7 @@ public class Duplicates {
         int[] a ={100,20,30,30,30,40,20,50,50,60,90,80,90,100,100};
 
         countDuplicates(a);
-        duplicateCounts(a);
+        duplicateOccurrence(a);
 
     }
 }
