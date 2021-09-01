@@ -39,6 +39,9 @@ public class Duplicates {
     }
 
 
+    /**
+     * It's a utility method.
+     */
     public static HashMap<Integer, Integer> sortByValue(HashMap<Integer, Integer> hm)
     {
         // Create a list from elements of HashMap

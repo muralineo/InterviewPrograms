@@ -8,6 +8,10 @@ public class ArrayDifference {
 
     public static List<String> pairList = new LinkedList<>();
 
+
+    /**
+     * It's a utility method.
+     */
     public static List<String> addPairs(int num1, int num2){
 
         // This conditions removes the duplicate pairs
@@ -18,6 +22,9 @@ public class ArrayDifference {
         return pairList;
     }
 
+    /**
+     * It's a utility method.
+     */
     public static List<String> addPairsWithoutSwapping(int num1, int num2) {
 
         if (!pairList.contains("(" + num1 + "," + num2 + ")") && !pairList.contains("(" + num2 + "," + num1 + ")")) {

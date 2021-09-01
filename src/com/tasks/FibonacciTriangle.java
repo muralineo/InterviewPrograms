@@ -4,6 +4,9 @@ import java.sql.Array;
 
 public class FibonacciTriangle {
 
+    /**
+     * It's a utility method.
+     */
     public static void fibonacci(long[] fibArr, int count) {
 
         //Adding first and second number of Fibonacci series
